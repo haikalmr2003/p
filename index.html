@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balikan yuuu</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        #gmau {
+            position: absolute;
+        }
+        #container {
+            position: relative;
+            height: 200px;
+        }
+        #result {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgur.com/V8C5zJn.jpeg" alt="Balikan yuuu" width="200">
+    <h1>balikan yuuu</h1>
+    <div id="container">
+        <button id="hayuuu">Hayuuu</button>
+        <button id="gmau">Gmau</button>
+    </div>
+    <div id="result">
+        <img src="https://i.imgur.com/g5hq2mq.jpeg" alt="Lopyuuu" width="200">
+        <h2>Maaciiwww</h2>
+		<h2>Lopyuuuuuuuuuuu</h2>
+    </div>
+    
+    <script>
+        document.getElementById("gmau").addEventListener("mouseover", function() {
+            let x = Math.random() * (window.innerWidth - this.offsetWidth);
+            let y = Math.random() * (window.innerHeight - this.offsetHeight);
+            this.style.left = x + "px";
+            this.style.top = y + "px";
+        });
+
+        document.getElementById("hayuuu").addEventListener("click", function() {
+            document.getElementById("result").style.display = "block";
+        });
+    </script>
+</body>
+</html>
